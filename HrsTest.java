@@ -38,6 +38,10 @@ class Director extends Manager{
 }
 
 public class HrsTest {
+	public static void calcTax(Employee e) {
+		System.out.println("º“µÊºº ∞ËªÍ");
+	}
+	
 	public static void main(String[] args) {
 		Salesman s = new Salesman();
 		Consultant c = new Consultant();
@@ -48,8 +52,21 @@ public class HrsTest {
 		d.calcBonus();
 		
 		//Salesman º“µÊºº
+		calcTax(s);
 		//Consultant º“µÊºº
+		calcTax(s);
 		//Director º“µÊºº
+		calcTax(s);
 		
+		//Object ≈¨∑°Ω∫ ªÛº” »Æ¿Œ
+		System.out.println(s.toString());
+		System.out.println(c.toString());
+		System.out.println(d.toString());
+		
+		if(s.equals(c)) {
+			System.out.println("∞∞¿∫ ∞¥√º");
+		}else {
+			System.out.println("¥Ÿ∏• ∞¥√º");
+		}
 	}
 }
